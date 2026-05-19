@@ -115,6 +115,77 @@
   50% { transform: rotate(-45deg) translateY(-12px); }
 }
 
+.seal {
+  position: fixed;
+  width: 70px;
+  opacity: 0.75;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(0.2px);
+}
+
+.seal1 {
+  top: 12%;
+  left: 8%;
+  animation: float1 7s ease-in-out infinite;
+}
+
+.seal2 {
+  top: 70%;
+  left: 15%;
+  width: 55px;
+  animation: float2 9s ease-in-out infinite;
+}
+
+.seal3 {
+  top: 25%;
+  right: 10%;
+  width: 65px;
+  animation: float3 8s ease-in-out infinite;
+}
+
+.seal4 {
+  bottom: 10%;
+  right: 18%;
+  width: 50px;
+  animation: float4 10s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%,100% {
+    transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(4deg);
+  }
+}
+
+@keyframes float2 {
+  0%,100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(8px);
+  }
+}
+
+@keyframes float3 {
+  0%,100% {
+    transform: translateY(0px) rotate(3deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(-3deg);
+  }
+}
+
+@keyframes float4 {
+  0%,100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
   .tagline {
     font-family: 'Jost', sans-serif;
     font-weight: 200;
@@ -288,6 +359,10 @@
 </style>
 </head>
 <body>
+<img src="seal.png" class="seal seal1" alt="">
+<img src="seal.png" class="seal seal2" alt="">
+<img src="seal.png" class="seal seal3" alt="">
+<img src="seal.png" class="seal seal4" alt="">
 
 
 <section class="hero">
