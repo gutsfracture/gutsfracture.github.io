@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
     overflow-x: hidden;
   }
 
-  /* Stars background */
+  
   body::before {
     content: '';
     position: fixed;
@@ -56,7 +56,7 @@
     z-index: 0;
   }
 
-  /* Hero */
+ 
   .hero {
     position: relative;
     min-height: 100vh;
@@ -187,7 +187,7 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Scroll arrow */
+ 
   .scroll-hint {
     position: absolute;
     bottom: 2.5rem;
@@ -218,7 +218,7 @@
     50% { opacity: 1; transform: scaleY(1); }
   }
 
-  /* Message section */
+ 
   .section {
     position: relative;
     z-index: 1;
@@ -254,121 +254,6 @@
     font-style: italic;
   }
 
-  /* Gallery */
-  .gallery-section {
-    position: relative;
-    z-index: 1;
-    padding: 4rem 2rem 6rem;
-  }
-
-  .gallery-label {
-    text-align: center;
-    font-size: 0.72rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 300;
-    margin-bottom: 3rem;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .photo-slot {
-    aspect-ratio: 4/3;
-    background: var(--navy-light);
-    border: 0.5px solid rgba(200,205,216,0.15);
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.3s ease;
-  }
-
-  .photo-slot:hover {
-    border-color: rgba(184,168,120,0.4);
-  }
-
-  .photo-slot img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-  }
-
-  .photo-slot.has-photo img { display: block; }
-  .photo-slot.has-photo .slot-placeholder { display: none; }
-
-  .slot-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  .slot-icon {
-    width: 36px;
-    height: 36px;
-    opacity: 0.3;
-  }
-
-  .slot-text {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--silver-dim);
-  }
-
-  .photo-caption {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    padding: 2rem 1rem 0.75rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 0.95rem;
-    color: var(--white);
-    background: linear-gradient(to top, rgba(11,15,30,0.85) 0%, transparent 100%);
-    display: none;
-    text-align: center;
-  }
-
-  .photo-slot.has-photo .photo-caption { display: block; }
-
-  .add-photo-input {
-    display: none;
-  }
-
-  /* Caption editing */
-  .caption-input {
-    display: none;
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: rgba(11,15,30,0.92);
-    padding: 0.6rem 0.75rem;
-    border: none;
-    border-top: 0.5px solid rgba(184,168,120,0.3);
-    color: var(--gold-light);
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 0.95rem;
-    text-align: center;
-    outline: none;
-    width: 100%;
-  }
-
-  /* Footer */
   .footer {
     position: relative;
     z-index: 1;
@@ -400,28 +285,11 @@
     color: var(--silver-dim);
   }
 
-  /* Edit instructions */
-  .edit-note {
-    position: fixed;
-    top: 1rem; right: 1rem;
-    background: rgba(11,15,30,0.92);
-    border: 0.5px solid rgba(184,168,120,0.3);
-    border-radius: 4px;
-    padding: 0.6rem 1rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    color: var(--gold);
-    z-index: 100;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .edit-note:hover { background: rgba(28,37,64,0.95); }
 </style>
 </head>
 <body>
 
 
-<!-- Hero -->
 <section class="hero">
   <div class="moon-heart">♡</div>
   <h1 class="hero-title">
@@ -441,7 +309,7 @@
   </div>
 </section>
 
-<!-- Message -->
+
 <section class="section">
   <p class="section-label">Sana ufak bir mesajim var, cicegim.</p>
   <div class="message-block" id="messageBlock" contenteditable="false">
@@ -454,7 +322,7 @@
     </p>
     <p>
       Dogum gununde ne kadar sevildigini bilmeni istiyorum. Yalnizca bugun degil, 
-      nefes almaya devam edecegim her gun, her sana sahip oldugum icin ozellesen siradan sabahlar.
+      nefes almaya devam edecegim her gun, her sana sahip oldugum icin ozellesen sabahlarda sevmeye devam edecegim.
     </p>
     <p>
       Gercekten, iyi ki dogmussun. Iyi ki <strong>varsin.</strong>
@@ -463,7 +331,6 @@
 </section>
 
 
-<!-- Footer -->
 <footer class="footer">
   <span class="footer-heart">♡</span>
   <p class="footer-text" id="footerText" contenteditable="false">Claude'undan.</p>
